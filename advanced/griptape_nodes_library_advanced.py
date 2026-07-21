@@ -65,7 +65,7 @@ def _start_model_server() -> None:
     # Find server path relative to this file or use environment variable
     server_dir = os.environ.get(
         "GRIPTAPE_MODEL_SERVER_DIR",
-        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "model_server")
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "model_server")
     )
     server_dir = os.path.normpath(server_dir)
 

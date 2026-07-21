@@ -1,0 +1,33 @@
+{
+  "name": "Local GPU LaMa Library",
+  "library_schema_version": "0.10.0",
+  "settings": [],
+  "metadata": {
+    "author": "Custom",
+    "description": "Local GPU object removal nodes using LaMa inpainting",
+    "library_version": "0.1.0",
+    "engine_version": "0.89.0",
+    "tags": ["local", "gpu", "lama", "inpainting"],
+    "dependencies": {
+      "pip_dependencies": ["simple-lama-inpainting", "opencv-python", "pillow>=11.2.1"]
+    },
+    "declarations": []
+  },
+  "widgets": [],
+  "categories": [],
+  "nodes": [
+    {
+      "class_name": "LocalObjectRemover",
+      "file_path": "griptape_nodes_library/image/local_object_remover.py",
+      "metadata": {
+        "category": "Image Nodes",
+        "description": "Remove objects from images using LaMa AI. No prompt needed - paint white mask over the object.",
+        "display_name": "Local Object Remover",
+        "icon": "eraser",
+        "tags": ["image", "inpaint", "remove", "local", "lama"]
+      }
+    }
+  ],
+  "workflows": [],
+  "is_default_library": false
+}

@@ -201,7 +201,7 @@ class LocalImageGeneration(BaseNode):
 
         logger.info(f"Sending generate request: {model_id}, {width}x{height}, steps={steps}")
         try:
-            resp = requests.post(f"{SERVER_URL}/generate", json=payload, timeout=300)
+            resp = requests.post(f"{SERVER_URL}/generate", json=payload, timeout=600)
             resp.raise_for_status()
         except Exception as e:
             raise RuntimeError(f"Server request failed: {e}")
